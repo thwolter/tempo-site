@@ -317,6 +317,11 @@ nav a, .header-link {
     gap: 24px
 }
 
+.interruption-section-single {
+    max-width: 390px;
+    grid-template-columns: 1fr
+}
+
 .interruption-section figure {
     margin: 0;
     padding: 24px;

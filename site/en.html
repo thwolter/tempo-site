@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tempo is a local desktop app for focused work, time tracking, and clear reviews." />
+    <meta name="description" content="Tempo is a local macOS app for focused work. Handle interruptions, track time by project and keep an accurate record. No account required." />
     <meta name="theme-color" content="#0f1715" />
-    <title>Tempo – Focus time that stays with you</title>
+    <title>Tempo – Focus on one task. Keep your place.</title>
     <link rel="icon" href="assets/tempo-icon.png" />
+    <link rel="alternate" hreflang="de" href="index.html" />
+    <link rel="alternate" hreflang="en" href="en.html" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -26,72 +28,74 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Focus time, stored on your computer</p>
-          <h1>Your time.<br /><em>Your tempo.</em></h1>
-          <p class="intro">A calm desktop companion for focused work. Create a project, start a session, capture what you completed, and keep your time in view — with no account and no cloud.</p>
+          <p class="eyebrow"><span></span> A local desktop app for macOS</p>
+          <h1>Focus on one task.<br /><em>Keep your place.</em></h1>
+          <p class="intro">Tempo helps you handle interruptions and keep an accurate record of what you did. Track time by project, add context when you are ready, and review your work — with no account required.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#availability">See availability <span aria-hidden="true">↓</span></a>
             <a class="button button-quiet" href="#features">Explore features <span aria-hidden="true">→</span></a>
           </div>
-          <div class="platform-line" aria-label="Desktop support for macOS, Windows and Linux">
-            <span>⌘ macOS</span><span>⊞ Windows</span><span>◉ Linux</span>
-          </div>
+          <p class="platform-line">⌘ Launching first on macOS</p>
         </div>
         <div class="hero-visual" aria-label="Tempo with an active focus session in dark appearance">
           <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="app-window app-window-current"><img src="assets/screenshots/tracking.jpg" alt="Tempo with an active focus session in dark appearance" /></div>
+          <div class="app-window app-window-current"><img src="assets/screenshots/tracking-en.jpg" alt="Tempo tracking an Admin task in dark appearance, with Pause and End task controls" /></div>
           <div class="floating-card"><span class="pulse"></span><div><b>Focus in progress</b><small>Pause, finish, or switch</small></div></div>
         </div>
       </section>
 
       <section class="feature-intro" id="features">
-        <p class="eyebrow"><span></span> Clear, not complicated</p>
-        <h2>Choose, begin,<br />capture, review.</h2>
-        <p>Tempo supports a deliberate routine for personal work. It is not a tool for surveillance, invoicing, teams, or project planning.</p>
+        <p class="eyebrow"><span></span> Stay focused through interruptions</p>
+        <h2>Interrupted? Switch tasks<br />and pick up where you left off.</h2>
+        <p>Start another project while your original task is paused. Tempo tracks one interruption at a time and returns the original task paused when it ends. Resume it when you are ready.</p>
+      </section>
+
+      <section class="interruption-section" aria-label="How Tempo handles an interruption">
+        <figure><img src="assets/screenshots/paused-en.jpg" alt="Admin is paused with a Resume button and Privat available as another project" loading="lazy" /><figcaption><strong>1. Keep your place</strong><span>Admin is paused while you switch projects.</span></figcaption></figure>
+        <figure><img src="assets/screenshots/interruption-en.jpg" alt="Privat is tracked as a separate interrupting task" loading="lazy" /><figcaption><strong>2. Track the interruption</strong><span>Privat has its own timer. Admin returns paused when this task ends.</span></figcaption></figure>
       </section>
 
       <section class="features" aria-label="Tempo features">
-        <article><span class="feature-number">01</span><h3>Projects that stay clear</h3><p>Create, rename, or archive projects. Archived projects leave Home while their recorded time remains available in Evaluation.</p></article>
-        <article><span class="feature-number">02</span><h3>One focused session</h3><p>Start, pause, resume, or finish a session. Use the tray to switch to another project when necessary.</p></article>
-        <article><span class="feature-number">03</span><h3>What did you get done?</h3><p>Capture a short activity note after a session. Correct the start and finish time before saving if needed.</p></article>
-        <article><span class="feature-number">04</span><h3>Review time with context</h3><p>See time by day, week, month, or year. Open a project to edit notes or delete individual completed entries.</p></article>
-        <article><span class="feature-number">05</span><h3>Use your data elsewhere</h3><p>Export the current evaluation or one project as CSV, Markdown, or JSON.</p></article>
-        <article><span class="feature-number">06</span><h3>Native, not intrusive</h3><p>Tempo follows your system light or dark appearance. It uses German for German system locales and English otherwise.</p></article>
+        <article><span class="feature-number">01</span><h3>A timer you control</h3><p>Start, pause, resume and end sessions. Returning to Home pauses the current task, so time away is not counted.</p></article>
+        <article><span class="feature-number">02</span><h3>Notes when you are ready</h3><p>Add a short activity note after a session, or skip it and add the note later.</p></article>
+        <article><span class="feature-number">03</span><h3>Correct the record</h3><p>Adjust a session’s start and finish times. Edit notes or delete completed entries later.</p></article>
+        <article><span class="feature-number">04</span><h3>Projects with history</h3><p>Create and rename projects. Archive them to clear Home while retaining their recorded work; restore them when needed.</p></article>
+        <article><span class="feature-number">05</span><h3>Time in context</h3><p>Review totals by project for the day, week, month or year, then inspect the individual sessions.</p></article>
+        <article><span class="feature-number">06</span><h3>Fits your desktop</h3><p>Use tray shortcuts for timer controls and project switching. Tempo follows your system appearance; its interface and exported reports support English and German.</p></article>
       </section>
 
       <section class="screens" aria-label="Tempo views">
-        <figure class="screen screen-left"><img src="assets/screenshots/home.jpg" alt="Tempo Home screen with project selection" /><figcaption>Choose a project and get going.</figcaption></figure>
-        <figure class="screen screen-center"><img src="assets/screenshots/note.jpg" alt="Tempo activity-note view with time adjustment" /><figcaption>Keep completed work in context.</figcaption></figure>
-        <figure class="screen screen-right"><img src="assets/screenshots/evaluation.jpg" alt="Tempo evaluation with time by project" /><figcaption>Understand time, rather than only counting it.</figcaption></figure>
+        <figure class="screen screen-left"><img src="assets/screenshots/home-en.jpg" alt="Tempo Home with Admin and Privat project choices" loading="lazy" /><figcaption>Choose a project.</figcaption></figure>
+        <figure class="screen screen-center"><img src="assets/screenshots/note-en.jpg" alt="Tempo prompt to add an activity note or skip for now" loading="lazy" /><figcaption>Add a note now or later.</figcaption></figure>
+        <figure class="screen screen-right"><img src="assets/screenshots/adjust-en.jpg" alt="Tempo editing a session’s start and finish time" loading="lazy" /><figcaption>Correct the time.</figcaption></figure>
       </section>
 
       <section class="workflow-section">
-        <div class="workflow-copy"><p class="eyebrow"><span></span> Reviews that stay useful</p><h2>From focus to a clear record.</h2><p>Tempo keeps more than a number. A session belongs to a project, receives a short note, and can be reviewed later. Export exactly the evaluation you need.</p><ul><li>Review all projects or a single project</li><li>CSV for spreadsheets, Markdown for readable reports, JSON for your own processing</li><li>On macOS: SQLite backup and restore from the native menu</li></ul></div>
-        <div class="workflow-screens" aria-label="Project management and export in Tempo">
-          <figure><img src="assets/screenshots/projects.jpg" alt="Tempo project management with archive" /><figcaption>Manage projects</figcaption></figure>
-          <figure><img src="assets/screenshots/export.jpg" alt="Tempo export with CSV, Markdown and JSON" /><figcaption>Export deliberately</figcaption></figure>
+        <div class="workflow-copy"><p class="eyebrow"><span></span> Review and export</p><h2>Know where your time went.</h2><p>See totals by project and inspect the sessions behind them. Export all projects or one project as CSV, Markdown or JSON.</p><ul><li>Review by day, week, month or year</li><li>Edit notes or remove completed entries later</li><li>Back up and restore data from the macOS menu</li></ul></div>
+        <div class="workflow-screens" aria-label="Tempo evaluation, project details, archive and export">
+          <figure><img src="assets/screenshots/evaluation-en.jpg" alt="Tempo Evaluation showing today's total for Admin" loading="lazy" /><figcaption>Review project totals</figcaption></figure>
+          <figure><img src="assets/screenshots/detail-en.jpg" alt="Admin project detail with two completed tasks" loading="lazy" /><figcaption>Inspect each session</figcaption></figure>
+          <figure><img src="assets/screenshots/archive-en.jpg" alt="Archived Admin project with an option to restore it" loading="lazy" /><figcaption>Keep project history</figcaption></figure>
+          <figure><img src="assets/screenshots/export-en.jpg" alt="Export an Admin project as CSV, Markdown or JSON" loading="lazy" /><figcaption>Take your data elsewhere</figcaption></figure>
         </div>
       </section>
 
       <section class="privacy-section" id="privacy">
         <div class="privacy-icon" aria-hidden="true">⌁</div>
         <div><p class="eyebrow"><span></span> Your data remains yours</p><h2>Stored locally.<br />Not in the cloud.</h2></div>
-        <p>Projects, sessions, and notes remain in a local SQLite database on your computer. Tempo needs no sign-in and sends no work data to an external service.</p>
+        <p>Tempo stores projects, sessions and notes locally in a SQLite database. It works without a cloud service or account.</p>
       </section>
 
       <section class="availability-section" id="availability">
-        <p class="eyebrow"><span></span> Store launch in preparation</p>
-        <h2>Tempo will be a<br /><em>one-time purchase.</em></h2>
-        <p class="availability-note">The planned desktop release covers macOS and Windows, with Linux packaging also intended. Store builds will be offered only after the relevant signing, certification, and privacy requirements are complete.</p>
+        <p class="eyebrow"><span></span> macOS first</p>
+        <h2>Tempo is coming to<br /><em>the Mac App Store.</em></h2>
+        <p class="availability-note">The macOS release is in preparation. The download link will appear here when the App Store listing is live. Windows and Linux releases are planned for later.</p>
         <div class="availability-cards">
-          <article><span class="os-icon">⌘</span><h3>Mac App Store</h3><p>In preparation. No download before App Store approval.</p></article>
-          <article><span class="os-icon">⊞</span><h3>Microsoft Store</h3><p>In preparation. No download before successful certification.</p></article>
-          <article><span class="os-icon">◉</span><h3>Linux</h3><p>A `.deb` package is planned; availability will be announced separately.</p></article>
+          <article><span class="os-icon">⌘</span><h3>macOS</h3><p>First release. Mac App Store link coming after approval.</p></article>
+          <article><span class="os-icon">⊞</span><h3>Windows</h3><p>Planned for a later release.</p></article>
+          <article><span class="os-icon">◉</span><h3>Linux</h3><p>Planned for a later release.</p></article>
         </div>
-        <a class="slint-attribution" href="https://slint.dev/" aria-label="Tempo is made with Slint">
-          <img src="https://raw.githubusercontent.com/slint-ui/slint/master/logo/MadeWithSlint-logo-whitebg.png" alt="Made with Slint" />
-        </a>
-        <p class="release-status">No subscription. No advertising. No free freemium tier.</p>
+        <p class="release-status"><a href="https://slint.dev/">Made with Slint</a></p>
       </section>
     </main>
 

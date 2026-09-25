@@ -25,4 +25,11 @@ No host or deployment process has been selected. When one is chosen, configure i
 
 Small interactions can use browser-native JavaScript modules in `site/` without a build step. Introduce a build tool only if a feature actually needs one.
 
-Before publishing, replace the bracketed operator, contact, and hosting-provider placeholders in all four legal pages and review the statements against the selected hosting arrangement.
+## macOS launch checklist
+
+- Replace the bracketed operator name, postal address, working contact email, and hosting-provider details in all four legal pages. Verify that the privacy wording matches the actual host and domain setup. A domain registration alone does not provide a working mailbox.
+- Add the live Mac App Store listing link to both landing pages after the listing is approved. Until then, the pages correctly say that the macOS release is in preparation. Windows and Linux are described as later plans.
+- Check the final screenshots against the released macOS build. The two-image interruption sequence shows the paused original task and the separate interruption; a third screenshot showing the original task returned paused would complete the sequence. Review the example data before a connected screenshot story is published.
+- Verify the rendered German and English pages at desktop and mobile widths on the chosen host, including all legal links and the App Store link when added.
+
+The landing pages use locally stored screenshot assets and do not load third-party images. The outbound Slint link is an ordinary link; the desktop app contains Slint's About widget for attribution.

@@ -301,11 +301,48 @@ nav a, .header-link {
 
 .features {
     max-width: 1184px;
-    margin: 20px auto 110px;
+    margin: 20px auto 90px;
     padding: 0 28px;
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     gap: 16px
+}
+
+.interruption-section {
+    max-width: 890px;
+    margin: 0 auto 110px;
+    padding: 0 28px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px
+}
+
+.interruption-section figure {
+    margin: 0;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #fff;
+    text-align: center
+}
+
+.interruption-section img {
+    display: block;
+    width: min(100%, 245px);
+    margin: 0 auto
+}
+
+.interruption-section figcaption {
+    display: grid;
+    gap: 5px;
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 14px
+}
+
+.interruption-section figcaption strong {
+    color: var(--ink);
+    font-size: 16px
 }
 
 .features article {
@@ -741,7 +778,8 @@ figcaption {
 }
 
 .release-status a {
-    color: #d4ef58
+    color: #d4ef58;
+    text-underline-offset: 3px
 }
 
 footer {
@@ -869,6 +907,25 @@ footer p {
         gap: 20px
     }
 
+    .interruption-section {
+        padding: 0 20px;
+        gap: 10px;
+        margin-bottom: 75px
+    }
+
+    .interruption-section figure {
+        padding: 10px
+    }
+
+    .interruption-section figcaption {
+        display: grid;
+        font-size: 12px
+    }
+
+    .interruption-section figcaption strong {
+        font-size: 13px
+    }
+
     .features h3 {
         margin: 16px 0 8px
     }
@@ -878,35 +935,31 @@ footer p {
     }
 
     .screens {
-        padding: 0 20px;
-        gap: 12px;
+        padding: 0 20px 16px;
+        justify-content: flex-start;
+        gap: 14px;
         margin-bottom: 75px;
-        min-height: 300px
+        min-height: 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory
     }
 
-    .screen img {
-        width: 96px;
+    .screen {
+        flex: 0 0 200px;
+        scroll-snap-align: center
+    }
+
+    .screen img, .screen-center img {
+        width: 100%;
         border-radius: 10px
     }
 
-    .screen-center img {
-        width: 122px
-    }
-
     .screen-left, .screen-right {
-        transform: translateY(20px)
+        transform: none
     }
 
-    .screen-left {
-        transform: translateY(20px) rotate(-5deg)
-    }
-
-    .screen-right {
-        transform: translateY(20px) rotate(5deg)
-    }
-
-    figcaption {
-        display: none
+    .screens figcaption {
+        display: block
     }
 
     .desktop-section {
@@ -983,5 +1036,16 @@ footer p {
 
     .intro {
         font-size: 16px
+    }
+}
+
+@media (max-width: 540px) {
+    .interruption-section, .workflow-screens {
+        grid-template-columns: 1fr
+    }
+
+    .workflow-screens img {
+        max-width: 265px;
+        margin: auto
     }
 }
